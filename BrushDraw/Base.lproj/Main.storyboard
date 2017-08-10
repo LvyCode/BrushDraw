@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FEm-Ty-QX7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ece-Qy-AgB">
+                                <rect key="frame" x="20" y="114" width="335" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.3076171875" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="贝塞尔曲线">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BEZIER:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDt-8o-a9t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pzo-fK-xFa">
+                                <rect key="frame" x="20" y="184" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.2243923611111111" green="0.61197916666666663" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="二次贝塞尔曲线">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BEZIER2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pMn-pq-wh9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7h3-sG-Rhf">
+                                <rect key="frame" x="20" y="254" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.22002495659722221" green="0.63001844618055558" blue="0.223388671875" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="OpenGL 压感效果(笔触效果)">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="OPENGL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UgM-Pi-N7m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pzo-fK-xFa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Cba-TZ-N3T"/>
+                            <constraint firstItem="7h3-sG-Rhf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="IjZ-1V-eII"/>
+                            <constraint firstItem="ece-Qy-AgB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="NDv-iG-5mf"/>
+                            <constraint firstItem="7h3-sG-Rhf" firstAttribute="top" secondItem="Pzo-fK-xFa" secondAttribute="bottom" constant="40" id="RUh-Gr-28O"/>
+                            <constraint firstAttribute="trailing" secondItem="ece-Qy-AgB" secondAttribute="trailing" constant="20" id="ZCy-Jh-f9s"/>
+                            <constraint firstItem="ece-Qy-AgB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="a93-Bc-bUK"/>
+                            <constraint firstAttribute="trailing" secondItem="Pzo-fK-xFa" secondAttribute="trailing" constant="20" id="igN-xw-dY9"/>
+                            <constraint firstAttribute="trailing" secondItem="7h3-sG-Rhf" secondAttribute="trailing" constant="20" id="tGZ-rJ-prY"/>
+                            <constraint firstItem="Pzo-fK-xFa" firstAttribute="top" secondItem="ece-Qy-AgB" secondAttribute="bottom" constant="40" id="y33-aw-yvM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uyc-1V-A1O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1135" y="-621"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3GV-Fl-Ejx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FEm-Ty-QX7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eJZ-LG-mBE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6hh-zU-NUz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCT-Ud-w4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="-621.13943028485767"/>
+        </scene>
+    </scenes>
+</document>
