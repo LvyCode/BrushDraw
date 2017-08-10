@@ -1,7 +1,7 @@
 # 贝塞尔曲线、OpenGL
 
-##关于 UIBezierPath
-UIBezierPath这个类在UIKit中， 是Core Graphics框架关于path的一个封装，使用此类可以定义简单的形状，比如我们常用到，矩形，圆形，椭圆，弧，或者不规则的多边形
+## 关于 UIBezierPath
+**UIBezierPath这个类在UIKit中， 是Core Graphics框架关于path的一个封装，使用此类可以定义简单的形状，比如我们常用到，矩形，圆形，椭圆，弧，或者不规则的多边形。**
 UIBezierPath对象是CGPathRef数据类型的封装。path如果是基于矢量形状的，都用直线或曲线去创建。我们一般使用UIBezierPath都是在重写view的drawRect方法这种情形。我们用直线去创建矩形或多边形，使用曲线创建弧或者圆。创建和使用path对象步骤：
 1、 重写View的drawRect方法
 2、 创建UIBezierPath的对象
